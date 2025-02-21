@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="#home" class="home-link">🏠 Home</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#consult">Consult a Doctor</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <h2>Your Health is Our Priority</h2>
+        <p>Get the best medical care and advice from our experienced doctors.</p>
+        <a href="#get-started" class="cta-button">Get Started</a>
+    </section>
+
+    <section id="get-started">
+        <h2>Get Started</h2>
+        <p>Welcome to our hospital management system. Here, you can register as a patient, consult with doctors, and receive treatment recommendations.</p>
+        <p>To begin, please register or consult a doctor.</p>
+    </section>
+
+    <section id="register">
+        <h2>Patient Registration</h2>
+        <form id="registrationForm">
+            <label for="patientName">Name:</label>
+            <input type="text" id="patientName" name="patientName" required>
+            
+            <label for="patientEmail">Email:</label>
+            <input type="email" id="patientEmail" name="patientEmail" required>
+            
+            <label for="patientPhone">Phone:</label>
+            <input type="tel" id="patientPhone" name="patientPhone" required>
+            
+            <input type="submit" value="Register">
+        </form>
+    </section>
+    
+    <section id="consult">
+        <h2>Consult a Doctor</h2>
+        <form id="consultationForm">
+            <label for="doctorName">Doctor's Name:</label>
+            <input type="text" id="doctorName" name="doctorName" required>
+            
+            <label for="symptoms">Symptoms:</label>
+            <textarea id="symptoms" name="symptoms" required></textarea>
+            
+            <input type="submit" value="Consult">
+        </form>
+    </section>
+    
+    <section id="recommendations">
+        <h2>Treatment Recommendations</h2>
+        <div id="recommendationOutput"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Hospital Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
